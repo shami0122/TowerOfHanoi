@@ -20,12 +20,12 @@ class Stack:
             return item_to_remove.get_value()
         return "The Stack is Empty!"
     
-    #Helper methods
     def peek(self):
         if self.size > 0:
             return self.top_item
         return "The Stack is Empty!"
 
+    #Helper methods
     def get_name(self):
         return self.name
 

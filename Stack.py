@@ -32,3 +32,11 @@ class Stack:
     def get_size(self):
         return self.size
     
+    def print_items(self):
+        item_to_print = self.top_item
+        list_to_print = []
+        while(item_to_print):
+            list_to_print.append(item_to_print)
+            item_to_print = item_to_print.get_next_node()
+        list_to_print.reverse
+        print("{0} Stack: {1}".format(self.get_name(), list_to_print))

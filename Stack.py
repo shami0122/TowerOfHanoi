@@ -1,8 +1,10 @@
 from Node import Node
 class Stack:
-    def __init__(self):
+    def __init__(self, name):
         self.size = 0
         self.top_item = None
+        # Need the name variable for the game speicifically
+        self.name = name
     
     def push(self, value):
         new_item = Node(value)
@@ -18,8 +20,15 @@ class Stack:
             return item_to_remove.get_value()
         return "The Stack is Empty!"
     
+    #Helper methods
     def peek(self):
         if self.size > 0:
             return self.top_item
         return "The Stack is Empty!"
+
+    def get_name(self):
+        return self.name
+
+    def get_size(self):
+        return self.size
     

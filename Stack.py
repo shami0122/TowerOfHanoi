@@ -22,7 +22,7 @@ class Stack:
     
     def peek(self):
         if self.size > 0:
-            return self.top_item
+            return self.top_item.get_value()
         return "The Stack is Empty!"
 
     #Helper methods
